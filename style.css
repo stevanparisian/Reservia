@@ -16,6 +16,7 @@ body {
     flex-direction: column;
 }
 
+/* code css pour header */
 
 header ul {
     background-color: var(--brand-color);
@@ -48,6 +49,7 @@ ul {
     margin: 0;   
 }
 
+/* code css pour main */
 
 main {
     flex: 1;
@@ -58,6 +60,15 @@ main {
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
+    border: 1px black solid;
+}
+
+.container2 {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 1px black solid;
+
 }
 
 .container div {
@@ -67,17 +78,17 @@ main {
    
 }
 
-.box1 {
+.cardscontainer1 {
     display: flex;
     flex-wrap: wrap;
-    background-color: lightcoral;
     flex-grow: 1;
+    background-color: lightcoral;
     border: 1px black solid;
     margin: 10px;
     padding: 10px;
 }
 
-.box2 {
+.cardscontainer2 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -88,7 +99,27 @@ main {
     width: 700px;
 }
 
-.minibox1 {
+.cardscontainer3 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    background-color: lightyellow;
+    border: 1px black solid;
+    margin: 10px;
+    padding: 10px;
+}
+
+.cardscontainer4 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    background-color: lightyellow;
+    border: 1px black solid;
+    margin: 10px;
+    padding: 10px;
+}
+
+.card1 {
     flex: 1;
     flex-wrap: wrap;
     border: 1px black solid;
@@ -96,12 +127,31 @@ main {
    
 }
 
-.minibox2 {
+.card2 {
     flex: 1;
     flex-wrap: wrap;
     border: 1px black solid;
+    padding: 10px;
    
 }
+
+.card3 {
+    flex: 1;
+    flex-wrap: wrap;
+    border: 1px black solid;
+    padding: 10px;
+
+}
+
+.card4 {
+    flex: 1;
+    flex-wrap: wrap;
+    border: 1px black solid;
+    padding: 10px;
+     
+}
+
+/* code css pour footer*/
 
 .footer {
     position: relative;
@@ -111,4 +161,12 @@ main {
     background-color: var(--brand-color);
  }
 
+/* code media queries*/
 
+ @media all and (max-width: 1024px)
+ {
+     body
+     {
+         width: auto;
+     }
+ }
