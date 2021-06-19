@@ -1,23 +1,26 @@
 html,
 
 body {
-    display: flex;
-    flex-direction: column;
+
     margin: 0;
     padding: 0;
     height: 100%;
 }
 
 :root {
-    --brand-color: #c8c8c8
+    --brand-color: #c8c8c8;
 }
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
 
 header ul {
     background-color: var(--brand-color);
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
     margin: 0;
     padding: 0;
     
@@ -25,7 +28,7 @@ header ul {
      
 .logo {
     
-    outline:  1px solid black
+    outline:  1px solid black;
 
 }
 
@@ -37,7 +40,7 @@ li {
     
     list-style-type: none;
     padding: 10px;
-    outline:  1px solid black
+    outline:  1px solid black;
 }
 
 ul {
@@ -45,29 +48,35 @@ ul {
     margin: 0;   
 }
 
-.main {
+
+main {
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: baseline;
-    outline:  1px solid black;
+    justify-content: center;
+    outline: 1px solid black;
 }
 
 .box {
+  
     background-color: lightcoral;
     width: 500px;
-    height: 200px;
     border: 1px black solid;
-    margin: 5px;
-    padding: 10px;
-     }
+    margin: 10px;
+    padding: 50px;
+}
 
 
-#footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 2.5rem;    
-    background-color: var(--brand-color);     
-  }
+
+
+
+footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:60px;
+    background-color: var(--brand-color);
+ }
+
+
