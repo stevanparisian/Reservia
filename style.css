@@ -48,70 +48,196 @@ main {
     padding: 10px;
 }
 
-
-
-#filtres {
-
+/* search bar */
+  
+  .search {
+    width: 100%;
     display: flex;
-}
+    align-self: center;
+    margin: 0 0 35px 0;
+  }
+  
+  .pin {
+    text-align: center;
+    border-radius: 15px 0 0 15px;
+    width: 40px;
+    height: 40px;
+    background: #F2F2F2;
+  }
 
-#nbresultat {
-    display: flex;
-    align-items: center
-}
+  .search i {
+    margin: 11px 0 0 0;
+  }
 
-
-
-
-
-
-
-
-
-.container {
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    border: 1px black solid;
-}
-
-.container2 {
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    border: 1px black solid;
-
-}
-
-.container div {
+  .searchTerm {
+    width: 200px;
+    padding: 5px;
+    height: 26px;
+    outline: none;
+    border: #000;
     font-size: 15px;
-    padding: .5em;
-    color: white;
+  }
+  
+  .searchTerm:focus{
+    color: #000;
+  }
+  
+  .searchButton {
+    width: 150px;
+    height: 40px;
+    border: 1px solid #0065FC;
+    background: #0065FC;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 15px 15px 0;
+    cursor: pointer;
+    font-size: 18px;
+  }
+
+  /* Filters */
+  
+
+#filters {
+
+    display: flex;
+    align-items: center;
    
 }
 
-.cardscontainer1 {
-    display: flex;
-    flex-wrap: wrap;
-    flex-grow: 1;
-    background-color: lightcoral;
-    border: 1px black solid;
-    margin: 10px;
-    padding: 10px;
+#filters h2 {
+    font-size: 17px;
+    padding: 0 30px 0 0;
 }
 
-.cardscontainer2 {
+#filters i {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    background-color: lightblue;
+    align-items: center;
+    border-radius: 25px 25px 25px 25px;
+    width: 40px;
+    height: 40px;
+    background: #DEEBFF;
+    color: #0065FC;
+}
+
+
+.filterButton {
+    align-self: center;
+    width: 200px;
+    height: 40px;
+    margin: 0 20px 0 0;
+    border: 1px solid #000;
+    background: #fff;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 15px 15px 0;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+
+
+  }
+
+/* texte nombre resultat */
+
+  #nbresult {
+    display: flex;
+    align-items: center;
+    padding: 35px 20px 0 0;
+}
+
+#nbresult i {
+    display: flex;
+    align-items: center;
+    border-radius: 25px 25px 25px 25px;
+    width: 25px;
+    height: 25px;
+    background: #FFF;
+    color: #0065FC;
+    border-color: #000;
+    border: solid 1px;
+}
+
+#nbresult p {
+    margin: 0 0 0 10px;
+}
+
+/* Container */
+
+
+.container-left {
+    display:flex;
+    border: 1px black solid;
+    width: 800px;
+
+}
+
+.cards-container-left {
+    display: flex;
+    flex-wrap: wrap;
     border: 1px black solid;
     margin: 10px;
     padding: 10px;
-    width: 700px;
+    width: 760px;
+    height: 500px;
 }
 
-.cardscontainer3 {
+.card-details-left {
+    border: 1px black solid;
+    padding: 10px;
+    width: 230px;
+    height: 180px;
+   
+}
+
+.card-details-left img {
+    height: 150px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.container-right {
+    display:flex;
+    flex-direction: column;
+    border: 1px black solid;
+    width: 100%;
+
+}
+
+.cards-container-right {
+    display: flex;
+    flex-direction: column;
+    border: 1px black solid;
+    width: 430px;
+    height: 600px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.card-details-right {
+    border: 1px black solid;
+    padding: 10px;
+    width: 350px;
+    height: 120px;
+}
+
+.card-details-right img {
+    height: 50px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+container-bottom {
+    display:flex;
+    border: 1px black solid;
+
+}
+
+cardscontainer3 {
     display: flex;
     flex-wrap: wrap;
     flex-grow: 1;
@@ -121,7 +247,7 @@ main {
     padding: 10px;
 }
 
-.cardscontainer4 {
+cardscontainer4 {
     display: flex;
     flex-wrap: wrap;
     flex-grow: 1;
@@ -131,23 +257,8 @@ main {
     padding: 10px;
 }
 
-.card1 {
-    flex: 1;
-    flex-wrap: wrap;
-    border: 1px black solid;
-    padding: 10px;
-   
-}
 
-.card2 {
-    flex: 1;
-    flex-wrap: wrap;
-    border: 1px black solid;
-    padding: 10px;
-   
-}
-
-.card3 {
+card3 {
     flex: 1;
     flex-wrap: wrap;
     border: 1px black solid;
@@ -155,7 +266,7 @@ main {
 
 }
 
-.card4 {
+card4 {
     flex: 1;
     flex-wrap: wrap;
     border: 1px black solid;
