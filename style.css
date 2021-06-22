@@ -9,10 +9,6 @@ body {
 
 }
 
-:root {
-    --brand-color: #c8c8c8;
-}
-
 body {
     display: flex;
     flex-direction: column;
@@ -49,7 +45,28 @@ nav li {
 main {
     flex: 1;
     outline: 1px solid black;
+    padding: 10px;
 }
+
+
+
+#filtres {
+
+    display: flex;
+}
+
+#nbresultat {
+    display: flex;
+    align-items: center
+}
+
+
+
+
+
+
+
+
 
 .container {
     display:flex;
