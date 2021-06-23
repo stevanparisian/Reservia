@@ -3,9 +3,10 @@ html,
 body {
 
     font-family: "raleway",sans-serif;
-    margin: 0;
+    margin: auto;
     padding: 0;
     height: 100%;
+    max-width: 1366px;
 
 }
 
@@ -97,22 +98,22 @@ main {
   /* Filters */
   
 
-#filters {
-
+#filters-items {
     display: flex;
-    align-items: center;
+
    
 }
 
-#filters h2 {
-    font-size: 17px;
-    padding: 0 30px 0 0;
+.filters-item {
+    display: flex;
 }
 
-#filters i {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.filters-item h2 {
+    font-size: 17px;
+}
+
+.filters-item i {
+    
     border-radius: 25px 25px 25px 25px;
     width: 40px;
     height: 40px;
@@ -122,13 +123,11 @@ main {
 
 
 .filterButton {
-    align-self: center;
     width: 200px;
     height: 40px;
     margin: 0 20px 0 0;
     border: 1px solid #000;
     background: #fff;
-    text-align: center;
     color: #fff;
     border-radius: 0 15px 15px 0;
     cursor: pointer;
@@ -165,33 +164,31 @@ main {
 
 /* Container */
 
-
-.container-left {
-    display:flex;
-    border: 1px black solid;
-    width: 800px;
-
+.large-block {
+    border: 1px green solid;
+    width: fit-content;
 }
 
-.cards-container-left {
+
+.medium-block-left {
     display: flex;
     flex-wrap: wrap;
-    border: 1px black solid;
+    border: 1px blue solid;
     margin: 10px;
     padding: 10px;
     width: 760px;
-    height: 500px;
+
 }
 
-.card-details-left {
-    border: 1px black solid;
+.small-block-left {
     padding: 10px;
     width: 230px;
     height: 180px;
+    border: 1px purple solid;
    
 }
 
-.card-details-left img {
+.small-block-left img {
     height: 150px;
     width: 100%;
     height: 100%;
@@ -199,97 +196,81 @@ main {
 }
 
 
-.container-right {
-    display:flex;
-    flex-direction: column;
-    border: 1px black solid;
-    width: 100%;
-
-}
-
-.cards-container-right {
+.medium-block-right {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    border: 1px black solid;
-    width: 430px;
-    height: 600px;
+    border: 1px blue solid;
     margin: 10px;
     padding: 10px;
+    width: fit-content
 }
 
-.card-details-right {
-    border: 1px black solid;
+.small-block-right {
     padding: 10px;
-    width: 350px;
+    width: 280px;
     height: 120px;
+    border: 1px purple solid
 }
 
-.card-details-right img {
-    height: 50px;
+.small-block-right img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-container-bottom {
-    display:flex;
-    border: 1px black solid;
 
-}
-
-cardscontainer3 {
+.medium-block-bottom {
     display: flex;
     flex-wrap: wrap;
-    flex-grow: 1;
-    background-color: lightyellow;
-    border: 1px black solid;
+    border: 1px blue solid;
     margin: 10px;
     padding: 10px;
+    width: fit-content
 }
 
-cardscontainer4 {
-    display: flex;
-    flex-wrap: wrap;
-    flex-grow: 1;
-    background-color: lightyellow;
-    border: 1px black solid;
-    margin: 10px;
+.small-block-bottom {
     padding: 10px;
+    width: 280px;
+    height: 120px;
+    border: 1px purple solid
+}
+
+.small-block-bottom img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 
-card3 {
-    flex: 1;
-    flex-wrap: wrap;
-    border: 1px black solid;
-    padding: 10px;
-
-}
-
-card4 {
-    flex: 1;
-    flex-wrap: wrap;
-    border: 1px black solid;
-    padding: 10px;
-     
-}
 
 /* code css pour footer*/
 
-.footer {
-    position: relative;
-    bottom:0;
-    width:100%;
-    height:60px;
-    background-color: var(--brand-color);
+footer {
+   background-color: #F2F2F2;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
  }
 
+ #footer-items {
+     width: 100%;
+     display: flex;
+     justify-content: space-around;
+
+ }
+
+ footer h4 {
+     font-size: 17px;
+ }
+
+ .footer-item ul {
+     padding: 0;
+ }
+
+ .footer-item li {
+    list-style-type: none;
+    padding: 0 0 14px 0;
+ }
 /* code media queries*/
 
- @media all and (max-width: 1024px)
- {
-     body
-     {
-         width: auto;
-     }
- }
