@@ -100,39 +100,71 @@ main {
 
 
 
-#filters-items {
+#filter-items {
     display: flex;
+
 }
 
-#filters-items h2 {
-    font-size: 17px;
+#filter-items h2 {
+    font-size: 15px;
+    align-items: stretch;
 }
 
-#filters-items i {
+.icon-background {
+    color: #DEEBFF;
+}
+.fa-stack { 
+    font-size: 1.2em;
+    display: inline-block;
+    height: 2em;
+    line-height: 2em;
+    position: relative;
+    vertical-align: middle;
+    width: 2em;
     
-    border-radius: 25px 25px 25px 25px;
-    width: 40px;
-    height: 40px;
-    background: #DEEBFF;
+}
+i { 
+    vertical-align: middle; 
+}
+.fa-money-bill-wave {
+    font-size: 0.7em;
     color: #0065FC;
 }
 
+.filter-item {
+    display: flex;
+    align-items: center;
+    border-top: 2.5px solid #DEEBFF;
+    border-right: 2.5px solid #DEEBFF;
+    border-bottom: 2.5px solid #DEEBFF;
+    height: 35px;
+    width: fit-content;
+    border-radius: 20px;
+    margin: 0 0 0 20px;
 
-.filterButton {
-    width: 200px;
-    height: 40px;
-    margin: 0 20px 0 0;
-    border: 1px solid #000;
-    background: #fff;
-    color: #fff;
-    border-radius: 0 15px 15px 0;
-    cursor: pointer;
-    font-size: 18px;
-    font-weight: 600;
-    color: #000;
+}
 
+.text-filter {
+    
+    font-weight: 700;
+    font-size: 14px;
+    margin: 0 15px 0 10px;
+}
 
-  }
+.fa-child {
+    font-size: 0.7em;
+    color: #0065FC;
+}
+
+.fa-heart {
+    font-size: 0.7em;
+    color: #0065FC;
+}
+
+.fa-dog {
+    font-size: 0.7em;
+    color: #0065FC;
+}
 
 /* texte nombre resultat */
 
