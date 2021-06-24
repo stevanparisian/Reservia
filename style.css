@@ -51,48 +51,51 @@ main {
 
 /* search bar */
   
-  .search {
+.search-item {
     width: 100%;
     display: flex;
-    align-self: center;
+    align-items: center;
     margin: 0 0 35px 0;
   }
   
-  .pin {
+  .fa-stack-search {
     text-align: center;
     border-radius: 15px 0 0 15px;
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 42px;
     background: #F2F2F2;
   }
 
-  .search i {
-    margin: 11px 0 0 0;
+  .search-item i {
+    margin: 11px 0 0 3px;
   }
 
-  .searchTerm {
-    width: 200px;
-    padding: 5px;
-    height: 26px;
+  input {
+    width: 250px;
+    height: 35px;
     outline: none;
     border: #000;
     font-size: 15px;
+    border-top: 2.5px solid #F2F2F2;
+    border-bottom: 2.5px solid #F2F2F2;
+    padding-left: 10px;
   }
   
   .searchTerm:focus{
     color: #000;
   }
   
-  .searchButton {
-    width: 150px;
-    height: 40px;
-    border: 1px solid #0065FC;
-    background: #0065FC;
-    text-align: center;
-    color: #fff;
-    border-radius: 0 15px 15px 0;
+  button {
+    height: 42px;
+    width: 120px;
+    background-color: #0065FC;
+    border-radius: 0px 15px 15px 0px;
+    border: 1px solid transparent;
+    font-family: 'Raleway', sans-serif;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 1em;
+    font-weight: 600;
+    color: white;
   }
 
   /* Filters */
@@ -107,7 +110,6 @@ main {
 
 #filter-items h2 {
     font-size: 15px;
-    align-items: stretch;
 }
 
 .icon-background {
@@ -123,7 +125,7 @@ main {
     width: 2em;
     
 }
-i { 
+.filter-item i { 
     vertical-align: middle; 
 }
 .fa-money-bill-wave {
