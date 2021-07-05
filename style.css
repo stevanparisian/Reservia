@@ -271,6 +271,45 @@ h3 {
     border-radius: 10px 10px 10px 10px;
 }
 
+
+/* text-block left */
+
+.text-block-left {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 35%;
+    border-radius: 0 0 10px 10px;
+    background-color: white;
+    color: black;
+ 
+  }
+
+  .text-block-left h4 {
+    margin: 0;
+    padding: 10px 0 0 10px;
+    line-height: 10px;
+    
+  }
+
+  .text-block-left p {
+    margin: 0;
+    padding: 10px 0 0 10px;
+    line-height: 10px;
+    font-size: 14px;
+    
+  }
+
+  .rating-left {
+    padding: 0 0 0 10px;
+    line-height: 30px;
+    font-size: 12px;
+ }
+
+
 /* block right  */
 
 #text-chart {
@@ -317,11 +356,38 @@ h3 {
     display: block;
     object-fit: cover;
     object-position: center;
-    width: 38%;
-    height: 100%;
+    width: 125px;
     border-radius: 10px 0 0 10px;
     
 }
+
+/* text block right */
+
+.text-block-right {
+    padding: 0 0 0 20px;
+    width: 62%;
+    overflow: hidden;
+}
+
+.rating-right {
+    line-height: 70px;
+    font-size: 11px;
+
+}
+
+.text-block-right h4 {
+    
+    line-height: 20px;
+    
+  }
+
+  .text-block-right p {
+
+    line-height: 10px;
+    font-size: 14px;
+    
+  }
+
 
 /* block bottom  */
 
@@ -374,7 +440,7 @@ h3 {
 
 .small-block-bottom3 {
     border: 1px purple solid;
-    height: 130px;
+    height: 165px;
     width: 300px;
     border-radius: 15px;
     background-color: white;
@@ -473,63 +539,6 @@ h3 {
     height: 100%;
     border-radius: 10px 10px 10px 10px;
 }
-
-/* text-block */
-
-.text-block {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 35%;
-    border-radius: 0 0 10px 10px;
-    background-color: white;
-    color: black;
- 
-  }
-
-  .text-block h4 {
-    margin: 0;
-    padding: 10px 0 0 10px;
-    line-height: 10px;
-    
-  }
-
-  .text-block p {
-    margin: 0;
-    padding: 10px 0 0 10px;
-    line-height: 10px;
-    font-size: 14px;
-    
-  }
-
-  h4 span { 
-    color: black; 
-    font-size: 16px;
-    
-   
- }
-
- .rating {
-    padding: 0 0 0 10px;
-    line-height: 30px;
- }
-
-  .rating > span {
-
-    display: inline-block;
-    position: relative;
-    width: 1.1em;
-    font-size: 12px;
-    
-  }
-  .rating > span:before {
-   
-    position: absolute;
-    
- }
 
 
 /* code css pour footer*/
