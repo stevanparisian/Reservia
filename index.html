@@ -3,14 +3,14 @@
     <head>
     
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Trouvez votre hébergement pour des vacances de rêve !</title>
         <script src="https://kit.fontawesome.com/074cb65719.js" crossorigin="anonymous"></script>
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="HandheldFriendly" content="true">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="HandheldFriendly" content="true">
+        <title>Trouvez votre hébergement pour des vacances de rêve !</title>
         
     </head>
     
@@ -20,14 +20,13 @@
 
         <header>
 
+            <div id="logo">
+                <img src="./images/logo/Reservia@3x.png" alt="logo Reservia">
+                <div class="inscrire">S'inscrire</div>
+            </div>
             <nav>
-                    
-                <img src="./images/logo/Reservia@3x.png" alt="logo resevia">
-                    <ul>      
-                        <li><a href="hebergement">hébergement</a></li>
-                        <li><a href="activités">activités</a></li>
-                        <li><a href="inscription">S'inscrire</a></li>
-                    </ul>
+                <a href="#lesherbergements" class="navigation">Hébergements</a>
+                <a href="#activités" class="navigation">Activités</a>
             </nav>
 
         </header>
@@ -44,74 +43,80 @@
 
                 <h1>Trouver votre hébergement pour des vacances de rêve</h1>
                     <p>En plein centre ville ou en pleine nature</p>
-            </div>
+                </div>
   
 
            <!-- Search -->
    
 
-            <div class="search-item">
+                <div class="search-item">
 
-                <span class="fa-stack-search">
-                    <i class="fas fa-map-marker-alt"></i>
-                </span>
-                <form>
-                    <input type="text" class="searchTerm" placeholder="Marseille, France">
-                </form>
-                    <button type="submit" class="search-button">Rechercher</button>
+                    <span class="fa-stack-search">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </span>
+                    <form>
+                        <input type="search" class="searchTerm" placeholder="Marseille, France">
+                    </form>
+                        <button type="submit"><p class="search-button">Rechercher</p><i class="fas fa-search loupe"></i></button>
 
-            </div>
+                </div>
 
         <!-- Filters-->
         
-            <div id="filter-menu">
+                <div id="filter-menu">
 
-                <h3>Filtres</h3>
-                <div class="filter-item">
+                    <h3>Filtres</h3>
 
-                    <span class="fa-stack">
-                        <i class="fas fa-circle fa-stack-2x icon-background"></i>
-                        <i class="fas fa-money-bill-wave fa-stack-1x"></i>
-                    </span>
-                    <p class="text-filter">Économique</p>
+                    <div class="filter-items">
+                    
+                    <div class="filter-item">
+
+                        <span class="fa-stack">
+                            <i class="fas fa-circle fa-stack-2x icon-background"></i>
+                            <i class="fas fa-money-bill-wave fa-stack-1x"></i>
+                        </span>
+                        <p class="text-filter">Économique</p>
+                    </div>
+    
+                    <div class="filter-item">
+    
+                        <span class="fa-stack">
+                            <i class="fas fa-circle fa-stack-2x icon-background"></i>
+                            <i class="fas fa-child fa-stack-1x"></i>
+                        </span>
+                        <p class="text-filter">Familial</p>
+                    </div>
+    
+                    <div class="filter-item">
+    
+                        <span class="fa-stack">
+                            <i class="fas fa-circle fa-stack-2x icon-background"></i>
+                            <i class="fas fa-heart fa-stack-1x"></i>
+                        </span>
+                        <p class="text-filter">Romantique</p>
+                    </div>
+    
+                    <div class="filter-item">
+    
+                        <span class="fa-stack">
+                            <i class="fas fa-circle fa-stack-2x icon-background"></i>
+                            <i class="fas fa-dog fa-stack-1x"></i>
+                        </span>
+                        <p class="text-filter">Animaux autorisés</p>
+                    </div>
+                    </div>
                 </div>
-    
-                <div class="filter-item">
-    
-                    <span class="fa-stack">
-                        <i class="fas fa-circle fa-stack-2x icon-background"></i>
-                        <i class="fas fa-child fa-stack-1x"></i>
-                    </span>
-                    <p class="text-filter">Familial</p>
-                </div>
-    
-                <div class="filter-item">
-    
-                    <span class="fa-stack">
-                        <i class="fas fa-circle fa-stack-2x icon-background"></i>
-                        <i class="fas fa-heart fa-stack-1x"></i>
-                    </span>
-                    <p class="text-filter">Romantique</p>
-                </div>
-    
-                <div class="filter-item">
-    
-                    <span class="fa-stack">
-                        <i class="fas fa-circle fa-stack-2x icon-background"></i>
-                        <i class="fas fa-dog fa-stack-1x"></i>
-                    </span>
-                    <p class="text-filter">Animaux autorisés</p>
-                </div>
+
+            
+
+                <div id="nbresult">
+
+                    <i class="fas fa-info"></i>
+                    <p>Plus de 500 logements sont disponible dans cette ville</p>
 
             </div>
+        </div>
 
-            <div id="nbresult">
-
-                <i class="fas fa-info"></i>
-                <p>Plus de 500 logements sont disponible dans cette ville</p>
-
-            </div>
-   
      
       
            <!-- Section blocks left" -->
