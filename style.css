@@ -263,7 +263,7 @@ main {
     position: relative;
     display: flex;
     justify-content: space-between;
-    width: 1340px;
+  
     
 }
 
@@ -682,6 +682,7 @@ footer {
     cursor: pointer;
     
  }
+
  
  /* Animation icones */
  
@@ -728,7 +729,7 @@ footer {
 
 /* mobile */
 
-@media screen and (max-width: 441px) {
+@media screen and (max-width: 453px) {
     
     
     /* Header */
