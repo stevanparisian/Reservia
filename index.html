@@ -6,9 +6,9 @@
         <script src="https://kit.fontawesome.com/074cb65719.js" crossorigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="HandheldFriendly" content="true">
         <title>Trouvez votre hébergement pour des vacances de rêve !</title>
         
     </head>
@@ -24,7 +24,7 @@
                 <div class="inscrire">S'inscrire</div>
             </div>
             <nav>
-                <a href="#lesherbergements" class="navigation">Hébergements</a>
+                <a href="#herbergements" class="navigation">Hébergements</a>
                 <a href="#activités" class="navigation">Activités</a>
             </nav>
 
@@ -50,13 +50,12 @@
 
                 <div class="search-item">
 
-                    <span class="fa-stack-search">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </span>
+                    <i class="fas fa-map-marker-alt icon-search"></i>
+                   
                     <form>
                         <input type="search" class="searchTerm" placeholder="Marseille, France">
                     </form>
-                        <button type="submit">Rechercher<i class="fas fa-search loupe"></i></button>
+                    <div class="button"><p class="rechercher">Rechercher</p><i class="fas fa-search loupe"></i></div>
 
                 </div>
 
@@ -68,41 +67,29 @@
 
                     <div class="filter-items">
                     
-                    <div class="filter-item">
+                        <div class="filter-item">
 
-                        <span class="fa-stack">
-                            <i class="fas fa-circle fa-stack-2x icon-background"></i>
-                            <i class="fas fa-money-bill-wave fa-stack-1x iconfilter"></i>
-                        </span>
-                        <p class="text-filter">Économique</p>
-                    </div>
+                            <i class="fas fa-money-bill-wave filter-icon"></i>
+                            <p class="filter-text">Économique</p>
+                        </div>
     
-                    <div class="filter-item">
+                         <div class="filter-item">
     
-                        <span class="fa-stack">
-                            <i class="fas fa-circle fa-stack-2x icon-background"></i>
-                            <i class="fas fa-child fa-stack-1x iconfilter"></i>
-                        </span>
-                        <p class="text-filter">Familial</p>
-                    </div>
+                            <i class="fas fa-child filter-icon"></i>
+                            <p class="filter-text">Familial</p>
+                        </div>
     
-                    <div class="filter-item">
+                        <div class="filter-item">
     
-                        <span class="fa-stack">
-                            <i class="fas fa-circle fa-stack-2x icon-background"></i>
-                            <i class="fas fa-heart fa-stack-1x iconfilter"></i>
-                        </span>
-                        <p class="text-filter">Romantique</p>
-                    </div>
+                            <i class="fas fa-heart filter-icon"></i>
+                            <p class="filter-text">Romantique</p>
+                        </div>
     
-                    <div class="filter-item">
+                        <div class="filter-item">
     
-                        <span class="fa-stack">
-                            <i class="fas fa-circle fa-stack-2x icon-background"></i>
-                            <i class="fas fa-dog fa-stack-1x iconfilter"></i>
-                        </span>
-                        <p class="text-filter">Animaux autorisés</p>
-                    </div>
+                            <i class="fas fa-dog filter-icon"></i>
+                            <p class="filter-text">Animaux autorisés</p>
+                        </div>
                     </div>
                 </div>
 
@@ -124,7 +111,7 @@
 
             <div id="blocks-left-right">
         
-                <section class="large-block-left">
+                <section class="large-block-left" id="herbergements">
                    
                     <h2>Hébergement à Marseille</h2>
                     
@@ -231,7 +218,7 @@
                     
                     <div id="text-chart">
                         <h2>Les plus populaires</h2>
-                            <i class="fas fa-chart-line"></i>
+                            <i class="fas fa-chart-line chart"></i>
                     </div>   
                             <div class="medium-block-right">
                                 
@@ -287,7 +274,7 @@
             </div>
             
             <!-- Section blocks bottom" -->
-            <div class="large-block-bottom">
+            <div class="large-block-bottom" id="activités">
                 
                 <h2>Activités à Marseille</h2>
                     
