@@ -44,7 +44,7 @@ header {
     max-width: 1340px;
     height: 90px;
     margin: 0 auto;
-    padding-top: 20px;
+    padding-top: 24px;
 }
 
 #logo {
@@ -78,7 +78,7 @@ nav {
 
 .navigation {
     padding: 45px 45px 0px 45px;
-    border-top: 2px solid transparent;
+    border-top: 3px solid transparent;
 }
 
 /* code css pour main */
@@ -224,14 +224,12 @@ input {
 #blocks-left-right {
     display: flex;
     justify-content: space-between;
-    position: relative;
 }
 
 
 /* block left  */
 
 .large-block-left {
-    flex-wrap: wrap; 
     background-color: #F2F2F2;
     border-radius: 20px;
     padding: 40px;
@@ -239,7 +237,6 @@ input {
 
 .medium-block-left {  
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap; 
     justify-content: space-between;
     width: 810px;
@@ -252,8 +249,6 @@ input {
 }
 
 .small-block-left {
-    display: flex;
-    flex-direction: column;
     position: relative;
     width: 248px;
     height: 200px;
@@ -286,10 +281,7 @@ input {
 
 .text-block-left {
     position: absolute;
-    display: flex;
-    flex-direction: column;
     width: 100%;
-    height: 35%;
     bottom: 0;
     right: 0;
     border-radius: 0 0 10px 10px;
@@ -316,7 +308,7 @@ input {
 }
 
 .rating-left {
-    padding: 0 0 0 10px;
+    padding-left: 10px;
     line-height: 30px;
     font-size: 12px;
 }
@@ -328,7 +320,7 @@ input {
     display:flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0 0 20px 0;
+    margin-bottom: 20px;
     cursor: pointer;
 }
 
@@ -342,10 +334,7 @@ input {
 }
 
 .large-block-right {
-    display: flex;
-    flex-direction: column;
     background-color: #F2F2F2;
-    height: 100%;
     border-radius: 20px;
     padding: 40px;
     
@@ -353,12 +342,9 @@ input {
 
 .medium-block-right {
     display: flex;
-    flex-wrap: wrap; 
     flex-direction: column;
     justify-content: space-between;
-    align-content: space-between;
     height: 487px;
-    width: 100%;
 }
 
 .small-block-right {
@@ -373,9 +359,7 @@ input {
 }
 
 .small-block-right img {
-    display: block;
     object-fit: cover;
-    object-position: center;
     width: 125px;
     border-radius: 10px 0 0 10px;
 }
@@ -383,20 +367,17 @@ input {
 /* text block right */
 
 .text-block-right {
-    padding: 0 0 0 20px;
+    padding-left: 20px;
     width: 50%;
     overflow: hidden;
 }
 
-
 .text-block-right h4 {
-    margin: 0;
     padding-top: 13px;
     line-height: 20px;
 }
 
 .text-block-right p {
-    margin: 0;
     line-height: 30px;
     font-size: 14px;
 }
@@ -406,7 +387,6 @@ input {
 }
 
 .rating-right {
-    margin: 0;
     line-height: 65px;
     font-size: 11px;
 }
@@ -415,8 +395,7 @@ input {
 
 .block-bottom {
     height: 600px;
-    max-width: 1340px;
-    padding: 50px 0 0 0;
+    padding-top: 50px;
 }
 
 .block-bottom img {
@@ -430,8 +409,6 @@ input {
 .large-block-bottom {
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    height: 446px;
 }
 
 .medium-block-bottom-1, .medium-block-bottom-2 {
@@ -441,10 +418,7 @@ input {
 }
 
 .column {
-    display: flex;
-    flex-direction: column;
     width: 290px;
-    height: 446px;
     border-radius: 10px;
     box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.1);
     cursor: pointer;
@@ -460,32 +434,24 @@ input {
 .small-block-bottom-1 img {
     display: block;
     object-fit: cover;
-    width: 100%;
     height: 391px;
 }
 
 .small-block-bottom-2 {
-    display: flex;
-    flex-direction: column;
     border-radius: 20px;
     box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.1);
-    height: 235px;
     cursor: pointer;
 }
 
 .small-block-bottom-2 img {
     display: block;
     object-fit: cover;
-    width: 100%;
     height: 180px;
 }
 
 .small-block-bottom-3 {
-    display: flex;
-    flex-direction: column;
     border-radius: 20px;
     box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.1);
-    height: 180px;
     cursor: pointer;
 }
 
@@ -510,9 +476,6 @@ input {
 /* Footer*/
 
 footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     max-width: 1340px;
     margin: 0 auto;
     background-color: #F2F2F2;
@@ -526,7 +489,6 @@ footer {
  #footer-items {
     display: flex;
     justify-content: space-around;
-    width: 100%;
 }
 
 .footer-item li {
@@ -539,9 +501,9 @@ footer {
  @media only screen and (min-width: 1366px){
  
     a:hover {
-        border-top: 2px solid #0065FC;
+        border-top: 3px solid #0065FC;
         color: #0065FC;
-        transition: all 350ms;
+        transition: all 250ms;
     }
  
     .filter-item:hover {
@@ -933,14 +895,14 @@ form input {
 /* block left */
 
 .large-block-left {
-    width: 768px;
+    width: 730px;
     height: 830px;
     padding: 20px;
     background-color: #fff;
 }
 
 .medium-block-left {
-    width: 720px;
+    width: 730px;
     height: 700px;
 }
 
@@ -957,12 +919,12 @@ form input {
     border-radius: 0;
 }
 .medium-block-right {
-    width: 700px;
+    width: 730px;
     height: 630px;
 }
 
 .small-block-right {
-    width: 720px;
+    width: 730px;
     height: 200px;
 }
 
