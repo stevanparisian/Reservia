@@ -27,7 +27,6 @@ img {
 
 h1 {
     font-size: 23px;
-    margin: 15px 0 0 0;
 }
 
 
@@ -40,36 +39,12 @@ h3 {
 
 header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     position: relative;
     max-width: 1340px;
     height: 90px;
     margin: 0 auto;
     padding-top: 20px;
-}
-
-nav {
-    position: absolute;
-    display: flex;
-    right: 100px;
-}
-
-.navigation {
-    padding: 45px 45px 0px 45px;
-    border-top: 2px solid transparent;
-    height: 110px;
-    text-align: center;
-}
-
-.inscrire {
-    padding: 46px 0 0px 30px;
-    width: 120px;
-    height: 110px;
-    text-align: right;
-    cursor: pointer;
-    color: #0065FC;
-    font-weight: 700;
 }
 
 #logo {
@@ -86,6 +61,25 @@ nav {
     cursor: pointer;
 }
 
+.inscrire {
+    padding: 43px 0 0px 30px;
+    width: 120px;
+    height: 110px;
+    text-align: right;
+    cursor: pointer;
+    color: #0065FC;
+    font-weight: 700;
+}
+
+nav {
+    position: absolute;
+    right: 100px;
+}
+
+.navigation {
+    padding: 45px 45px 0px 45px;
+    border-top: 2px solid transparent;
+}
 
 /* code css pour main */
 main {
@@ -94,6 +88,10 @@ main {
 }
 
 /* text menu */
+
+.text-presentation {
+    margin-top: 30px;
+}
 
 .text-presentation p {
 
@@ -107,16 +105,13 @@ main {
     align-items: center;
     width: 370px;
     height: 52px;
-    margin: 0 0 30px 0;
+    margin-bottom: 30px;
     border: 1px solid #F2F2F2;
     border-radius: 15px;
 }
   
 .icon-search {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
     border-radius: 15px 0 0 15px;
     width: 50px;
     height: 52px;
@@ -139,11 +134,6 @@ input {
     border-bottom: 1px solid #F2F2F2;
     padding-left: 10px;
 }
-  
-.searchTerm:focus{
-    color: #000;
-}
-
   
 .button {
     display: flex;
@@ -217,8 +207,7 @@ input {
     margin: 25px 0 20px 0;
 }
 
-#nbresult i {
-    display: inline-block;
+.fa-info {
     font-size: 12px;
     border-radius: 20px;
     padding: 0.5em 0.8em;
@@ -227,7 +216,7 @@ input {
 }
 
 #nbresult p {
-    margin: 5px 0 0 10px;
+    margin-left: 10px;
 }
 
 /* blocks */
@@ -454,7 +443,7 @@ input {
 .column {
     display: flex;
     flex-direction: column;
-    width: 305px;
+    width: 290px;
     height: 446px;
     border-radius: 10px;
     box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.1);
@@ -466,14 +455,6 @@ input {
     flex-direction: column;
     justify-content: space-between;
     width: 305px;
-}
-
-
-.carrétype2 {
-    display: flex;
-    flex-direction: column;
-    border-radius: 20px;
-    box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.1);
 }
 
 .small-block-bottom-1 img {
@@ -504,15 +485,16 @@ input {
     flex-direction: column;
     border-radius: 20px;
     box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.1);
-    height: 165px;
+    height: 180px;
     cursor: pointer;
 }
 
 .small-block-bottom-3 img {
     display: block;
     object-fit: cover;
+    object-position: 0 3%;
     width: 100%;
-    height: 110px;
+    height: 125px;
 }
 
 /* text block bottom */
@@ -565,9 +547,9 @@ footer {
     .filter-item:hover {
         color: #0065FC;
         background-color: #DEEBFF;
-        border-top: 1px solid #0065FC;
-        border-right: 1px solid #0065FC;
-        border-bottom: 1px solid #0065FC;
+        border-top: 2.5px solid #0065FC;
+        border-right: 2.5px solid #0065FC;
+        border-bottom: 2.5px solid #0065FC;
         transition: all 250ms;
     }
  
@@ -596,8 +578,8 @@ footer {
 /* mobile */
 
 @media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
+  and (min-width: 375px) 
+  and (max-width: 667px) 
    { 
 
     /* Header */
@@ -611,7 +593,7 @@ footer {
     nav {
         display: flex;
         position: absolute;
-        bottom: 0px;
+        top: 80px;
         width: 100%;
         right: 0;
     }
@@ -835,15 +817,15 @@ footer {
 /* tablet */
 
 @media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
+  and (min-width: 768px) 
+  and (max-width: 1024px) 
    {
 
     
 /* Header */
     
 header {
-    height: 120px;
+    height: 130px;
     padding: 0;
     margin: 0 auto;
 }
@@ -853,7 +835,7 @@ nav {
     position: absolute;
     width: 100%;
     right: 0;
-    bottom: 0px;
+    top: 100px;
 }
 
 .navigation {
