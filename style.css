@@ -539,7 +539,7 @@ footer {
 
 /* mobile */
 
-@media only screen and (max-width: 375px) 
+@media screen and (max-width: 375px) 
    { 
 
     /* Header */
@@ -775,7 +775,7 @@ footer {
     }
 }
 
-@media only screen and (max-width: 414px) 
+@media screen and (max-width: 414px) 
 {
     header {
         height: 120px;
